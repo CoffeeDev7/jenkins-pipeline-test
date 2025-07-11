@@ -10,5 +10,8 @@ pipeline{
     stage('deploy'){
       steps{ echo 'deployed.'}
     }
+    stage ('Now testing if jenkins' github-webhook triggers on sample push'){
+      steps{ echo 'something is pushed to github....thus triggered' }
+    }
   }
 }
